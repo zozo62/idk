@@ -1,0 +1,23 @@
+/* --- 修正後的響應式排版 --- */
+
+/* 1. 預設狀態：維持 Grid 佈局 (在桌面顯示兩欄) */
+.grid-3 {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important; /* 強制兩欄 */
+  gap: 20px !important;
+  align-items: start !important;
+}
+
+/* 2. 手機版：螢幕小於 767px 時，才改成單欄堆疊 */
+@media screen and (max-width: 767px) {
+  .grid-3 {
+    grid-template-columns: 1fr !important; /* 變成單欄 */
+  }
+  
+  .code-embed-4, 
+  .code-embed-5 {
+    height: auto !important;
+    min-height: 200px !important;
+    width: 100% !important;
+  }
+}
