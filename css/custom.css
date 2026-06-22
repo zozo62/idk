@@ -1,0 +1,19 @@
+/* --- Custom Fixes for BrickBot Showcase --- */
+
+/* Fix Grid Alignment for Desktop */
+.grid-3 {
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
+/* Make it responsive for Mobile */
+@media screen and (max-width: 767px) {
+  .grid-3 {
+    flex-direction: column !important;
+  }
+  
+  .code-embed-4, .code-embed-5 {
+    height: auto !important;
+    margin-top: 10px !important;
+  }
+}
