@@ -1,19 +1,33 @@
 /* --- Custom Fixes for BrickBot Showcase --- */
 
-/* Fix Grid Alignment for Desktop */
+/* 桌面版：確保網格對齊 */
 .grid-3 {
   display: flex !important;
+  flex-wrap: wrap; /* 讓內容在空間不足時自動換行 */
   align-items: flex-start !important;
 }
 
-/* Make it responsive for Mobile */
+/* 手機版響應式設定 */
 @media screen and (max-width: 767px) {
   .grid-3 {
     flex-direction: column !important;
+    width: 100% !important; /* 強制網格寬度佔滿手機螢幕 */
+    padding: 0 15px !important; /* 給左右留一點邊距，不要緊貼螢幕邊緣 */
   }
   
-  .code-embed-4, .code-embed-5 {
+  /* 確保所有嵌入內容高度自動，避免在手機上爆版 */
+  .code-embed-4, 
+  .code-embed-5,
+  .w-embed-youtubevideo {
     height: auto !important;
+    min-height: 200px !important; /* 給影片一個最小高度，避免太扁 */
+    width: 100% !important;
     margin-top: 10px !important;
+  }
+
+  /* 調整圖片容器，讓圖片在手機上看起來比較舒服 */
+  .grid-3 img {
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
