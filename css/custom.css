@@ -1,37 +1,40 @@
-/* --- Custom Fixes for BrickBot Showcase --- */
+/* --- Aggressive Mobile Fix for BrickBot Showcase --- */
 
-/* 桌面版：確保網格對齊 */
+/* Desktop defaults */
 .grid-3 {
   display: flex !important;
-  flex-wrap: wrap; /* 讓內容在空間不足時自動換行 */
+  flex-wrap: wrap; 
   align-items: flex-start !important;
 }
 
-/* 手機版響應式設定 */
+/* Force mobile stacking for all elements */
 @media screen and (max-width: 767px) {
+  
+  /* 1. Force the grid to stack vertically */
   .grid-3 {
+    display: flex !important;
     flex-direction: column !important;
-    width: 100% !important; /* 強制網格寬度佔滿手機螢幕 */
-    padding: 0 15px !important; /* 給左右留一點邊距，不要緊貼螢幕邊緣 */
+    width: 100% !important;
+    padding: 0 10px !important;
+    box-sizing: border-box !important;
   }
   
-  /* 確保所有嵌入內容高度自動，避免在手機上爆版 */
+  /* 2. Force every container and embed to be full width */
+  .div-block-4, 
+  .div-block-5, 
   .code-embed-4, 
   .code-embed-5,
   .w-embed-youtubevideo {
-    height: auto !important;
-    min-height: 200px !important; /* 給影片一個最小高度，避免太扁 */
     width: 100% !important;
-    margin-top: 10px !important;
+    height: auto !important;
+    min-height: 200px !important;
+    margin: 10px 0 !important; /* Spacing between the stacked blocks */
+    float: none !important;
   }
 
-  /* 調整圖片容器，讓圖片在手機上看起來比較舒服 */
+  /* 3. Ensure images don't overflow */
   .grid-3 img {
     max-width: 100% !important;
     height: auto !important;
-
-    /* 將此加入 custom.css，看看哪個元素超出了螢幕邊框 */
-* {
-  outline: 1px solid red !important;
   }
 }
