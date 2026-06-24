@@ -1,23 +1,39 @@
-/* --- 修正後的響應式排版 --- */
-
-/* 1. 預設狀態：維持 Grid 佈局 (在桌面顯示兩欄) */
-.grid-3 {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important; /* 強制兩欄 */
-  gap: 20px !important;
-  align-items: start !important;
+/* 清單頁面排版 */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* 2. 手機版：螢幕小於 767px 時，才改成單欄堆疊 */
-@media screen and (max-width: 767px) {
-  .grid-3 {
-    grid-template-columns: 1fr !important; /* 變成單欄 */
-  }
-  
-  .code-embed-4, 
-  .code-embed-5 {
-    height: auto !important;
-    min-height: 200px !important;
-    width: 100% !important;
-  }
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.button {
+  display: inline-block;
+  background: #008c99; /* 你的品牌色 */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
 }
