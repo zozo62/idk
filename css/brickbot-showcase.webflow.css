@@ -6990,7 +6990,7 @@ img {
   background-clip: border-box;
   border-radius: 10px;
   margin-bottom: 24px;
-  margin-left: 20px;
+  margin-left: 10px;
   position: static;
 }
 
@@ -7057,7 +7057,7 @@ img {
 .button-1 {
   border-radius: 10px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .button-1:hover {
@@ -7082,7 +7082,7 @@ img {
 .button-1-copy {
   border-radius: 10px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .button-1-copy:hover {
