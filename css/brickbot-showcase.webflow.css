@@ -282,8 +282,8 @@
   --_colors---card--card-accent-tertiary-bg-hover: var(--_colors---background-color--bg-accent-tertiary);
   --_colors---card--card-accent-tertiary-text: transparent;
   --_colors---card--card-accent-tertiary-border: transparent;
-  --_sizes---tag--tag-padding-vertical: var(--_sizes---spacing--0-25x);
   --_typography---size: 0px;
+  --_sizes---tag--tag-padding-vertical: var(--_sizes---spacing--0-25x);
   --_colors---text-link--link-secondary-hover: var(--_colors---core-color-tint--neutral-inverse-a60);
   --_interactions---ix--ix-follow-cursor: 0%;
   --_sizes---width--xxs: 12rem;
