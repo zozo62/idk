@@ -73,7 +73,7 @@
   --_sizes---container--container-lg-width: 1440px;
   --_sizes---container--container-sm-width: 1000px;
   --_sizes---section--section-padding-vertical: var(--_sizes---spacing--3x);
-  --_colors---core-neutral-color--neutral-primary: var(--_colors---core-color-tint--accent-primary-a10);
+  --_colors---core-neutral-color--neutral-primary: var(--_colors---text-color--text-on-accent-primary);
   --_colors---background-color--bg-secondary: var(--_colors---core-neutral-color--neutral-secondary);
   --_sizes---spacing--2x: 1px;
   --_colors---background-color--bg-accent-primary: var(--_colors---core-accent-color--accent-primary);
@@ -5109,7 +5109,7 @@ img {
 
 .nav_menu {
   background-color: #0000;
-  flex-flow: row;
+  flex-flow: column;
   flex: 0 auto;
   justify-content: center;
   align-self: flex-end;
@@ -5121,7 +5121,8 @@ img {
   padding-left: 0;
   padding-right: 0;
   display: flex;
-  position: static;
+  position: absolute;
+  inset: 0% 0% 0% auto;
   transform: none !important;
 }
 
@@ -9299,6 +9300,7 @@ img {
   }
 
   .button-2 {
+    color: var(--_colors---text-color--text-on-accent-primary);
     margin-left: 10px;
   }
 
@@ -9428,6 +9430,19 @@ img {
     display: flex;
   }
 
+  .div-block-7 {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-columns: .25fr .25fr .25fr .25fr;
+    grid-auto-columns: 1fr;
+    place-content: stretch center;
+    align-items: flex-start;
+    margin-left: -105px;
+    display: flex;
+    position: relative;
+  }
+
   .creactions {
     margin-top: 20px;
   }
@@ -9442,6 +9457,13 @@ img {
 
   .robot-a.is-accent-primary {
     margin-top: -81px;
+  }
+
+  .section-5 {
+    grid-template-columns: .25fr;
+    grid-auto-columns: minmax(200px, .25fr);
+    position: relative;
+    left: 0;
   }
 }
 
@@ -9469,6 +9491,12 @@ img {
 
   #w-node-_61be48fd-08da-7879-1198-67c4146a01f2-d66a6ef8.w-node-bc77fc83-8e69-814b-3004-f529c84ca2ca-ca3552e5 {
     grid-area: span 1 / span 2 / span 1 / span 2;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #w-node-_59f896f4-f5f3-5954-7be9-afa7c549d4db-c9c4b7d8 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
 
