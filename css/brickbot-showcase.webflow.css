@@ -5109,7 +5109,7 @@ img {
 
 .nav_menu {
   background-color: #0000;
-  flex-flow: column;
+  flex-flow: row;
   flex: 0 auto;
   justify-content: center;
   align-self: flex-end;
@@ -5121,8 +5121,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   display: flex;
-  position: absolute;
-  inset: 0% 0% 0% auto;
+  position: static;
   transform: none !important;
 }
 
