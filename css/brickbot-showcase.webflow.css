@@ -7495,7 +7495,7 @@ img {
   max-height: none;
   padding-top: var(--_sizes---section--section-padding-vertical);
   padding-bottom: var(--_sizes---section--section-padding-vertical);
-  background-color: var(--_colors---core-neutral-color--neutral-primary);
+  background-color: var(--_colors---core-color-tint--accent-primary-a10);
   color: var(--_colors---text-color--text-primary);
   margin-top: 0;
   margin-bottom: 0;
