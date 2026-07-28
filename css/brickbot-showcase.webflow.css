@@ -833,7 +833,7 @@ img {
 
 .heading_primary {
   max-width: 35ch;
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: var(--_typography---h1-heading--h1-margin-bottom);
   font-family: var(--_typography---font--heading-font);
   font-size: var(--_sizes---spacing--4x);
@@ -2521,13 +2521,11 @@ img {
   grid-auto-columns: 1fr;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 90px;
+  margin: 10px 90px 0 0;
   padding: .25rem 0;
   display: flex;
   position: absolute;
-  inset: 75% 0% auto auto;
+  inset: 0% 0% auto auto;
   box-shadow: 0 4px 8px -2px #0000001a;
 }
 
@@ -6825,7 +6823,7 @@ img {
 
 .heading {
   font-size: var(--_typography---h2-heading--h2-size);
-  margin-top: 40px;
+  margin-top: 80px;
   margin-left: 0;
   padding-top: 10px;
   padding-left: 10px;
