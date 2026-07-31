@@ -6977,7 +6977,8 @@ img {
 
 .code-embed-5 {
   border-radius: 0;
-  height: 345px;
+  max-width: 500px;
+  height: 300px;
   max-height: 300px;
   margin-top: 20px;
 }
@@ -7214,7 +7215,17 @@ img {
   max-height: 520px;
 }
 
-.paragraph-8, .paragraph-9, .paragraph-10 {
+.paragraph-8 {
+  margin-top: 20px;
+}
+
+.paragraph-9 {
+  margin-top: 20px;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.paragraph-10 {
   margin-top: 20px;
 }
 
@@ -7233,6 +7244,16 @@ img {
 
 .tabs-content {
   max-height: none;
+}
+
+.div-block-5 {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 480px;
+  max-height: 520px;
+  margin-left: 90px;
+  display: block;
 }
 
 .heading-7 {
@@ -7633,6 +7654,12 @@ img {
   min-width: 0;
   margin-bottom: 0;
   position: relative;
+}
+
+.div-block-8 {
+  max-width: 480px;
+  max-height: 520px;
+  margin-left: 0;
 }
 
 @media screen and (max-width: 991px) {
