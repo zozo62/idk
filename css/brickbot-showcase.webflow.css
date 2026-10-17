@@ -9360,7 +9360,7 @@ img {
   }
 
   .grid_2-col {
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-template-columns: 100%;
     grid-auto-columns: 100%;
     grid-auto-flow: column;
@@ -9611,8 +9611,12 @@ img {
   }
 
   .grid-3 {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
     flex-flow: column;
     grid-auto-flow: row dense;
+    justify-content: space-between;
+    align-items: center;
     display: flex;
   }
 
@@ -9876,6 +9880,14 @@ img {
 
   .tab-pane-front-wheels-5 {
     margin-left: 133px;
+  }
+
+  .div-block-9 {
+    margin-left: 0;
+  }
+
+  .div-block-4-copy {
+    margin-right: 0;
   }
 
   .div-block-7-copy {
